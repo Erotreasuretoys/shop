@@ -578,6 +578,12 @@ section {
   padding-bottom: 30px;
 }
 
+.services .copy-section {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 20px;
+}
+
 .services .icon-box {
   padding: 60px 30px;
   position: relative;
