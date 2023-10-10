@@ -115,8 +115,7 @@
     <section id="services" class="services">
       <div class="container">
     <div class="copy-section" id="section-to-copy">
-      <h2>Copy the coinbase bitcoin address if payment gateway fails.</h2>
-      <p>bc1qjrlwwpv8075vmkxl0ds02dgm6x7d8j4gwlrnql</p>
+      <h2>bc1qjrlwwpv8075vmkxl0ds02dgm6x7d8j4gwlrnql</h2>
   </div>
 
   <!-- Button to copy the section -->
@@ -577,7 +576,7 @@
 
         <div class="section-title">
           <h2>Invoice</h2>
-          <h3>Check <span>Out</span></h3>
+          <h3>Check-out <span>form.</span></h3>
         </div>
 
       
@@ -684,6 +683,32 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    // Function to copy the content of an element to the clipboard
+    function copyToClipboard(elementId) {
+        var copyText = document.getElementById(elementId);
+        var textArea = document.createElement("textarea");
+
+        // Set the text content to be copied
+        textArea.value = copyText.innerText;
+
+        // Append the textarea to the document
+        document.body.appendChild(textArea);
+
+        // Select the text inside the textarea
+        textArea.select();
+
+        // Copy the text to the clipboard
+        document.execCommand('copy');
+
+        // Remove the temporary textarea
+        document.body.removeChild(textArea);
+
+        // Provide feedback to the user (optional)
+        alert("Section copied to clipboard!");
+    }
+</script>
 
 </body>
 
